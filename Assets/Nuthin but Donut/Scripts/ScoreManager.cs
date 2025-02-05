@@ -22,6 +22,12 @@ public class ScoreManager : MonoBehaviour
 
         // todo
         // 1. update the text to change based on the new score
+        
+        scoreText.text = $"Score: {score}";
+        
         // 2. play a sound for the crowd cheering
+        audioSource.clip = crowdCheering;
+        audioSource.Play();
+        
     }
 }
